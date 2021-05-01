@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+@font-face{ 
+	font-family:'NotoSans';
+	font-weight:400;
+	src:url('../fonts/notosans/NotoSans-Regular.eot');
+	src:url('../fonts/notosans/NotoSans-Regular.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/notosans/NotoSans-Regular.woff2') format('woff2'), 
+			url('../fonts/notosans/NotoSans-Regular.woff') format('woff'), 
+			url('../fonts/notosans/NotoSans-Regular.ttf') format('truetype');
+}
+@font-face{ 
+	font-family:'NotoSans';
+	font-weight:500;
+	src:url('../fonts/notosans/NotoSans-Medium.eot');
+	src:url('../fonts/notosans/NotoSans-Medium.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/notosans/NotoSans-Medium.woff2') format('woff2'), 
+			url('../fonts/notosans/NotoSans-Medium.woff') format('woff'), 
+			url('../fonts/notosans/NotoSans-Medium.ttf') format('truetype');
+}
+@font-face{ 
+	font-family:'NotoSans';
+	font-weight:700;
+	src:url('../fonts/notosans/NotoSans-Bold.eot');
+	src:url('../fonts/notosans/NotoSans-Bold.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/notosans/NotoSans-Bold.woff2') format('woff2'), 
+			url('../fonts/notosans/NotoSans-Bold.woff') format('woff'), 
+			url('../fonts/notosans/NotoSans-Bold.ttf') format('truetype');
+	}
+@font-face{ 
+	font-family:'NotoSans';
+	font-weight:800;
+	src:url('../fonts/notosans/NotoSans-Black.eot');
+	src:url('../fonts/notosans/NotoSans-Black.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/notosans/NotoSans-Black.woff2') format('woff2'), 
+			url('../fonts/notosans/NotoSans-Black.woff') format('woff'), 
+			url('../fonts/notosans/NotoSans-Black.ttf') format('truetype');
+}
+@font-face{ 
+	font-family:'NotoSans';
+	font-weight:300;
+	src:url('../fonts/notosans/NotoSans-Light.eot');
+	src:url('../fonts/notosans/NotoSans-Light.eot?#iefix') format('embedded-opentype'), 
+			url('../fonts/notosans/NotoSans-Light.woff2') format('woff2'), 
+			url('../fonts/notosans/NotoSans-Light.woff') format('woff'), 
+			url('../fonts/notosans/NotoSans-Light.ttf') format('truetype');
+}

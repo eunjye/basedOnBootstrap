@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="images/icon/favicon.ico">
+    <title>Home Page 4</title>
+
+    <link rel="stylesheet" href="vendor/mbbootstrap/mdb.min.css">
+    <link rel="stylesheet" href="vendor/revolution/css/font.css">
+    <link rel="stylesheet" href="vendor/revolution/css/settings.css">
+    <link rel="stylesheet" href="vendor/revolution/css/layers.css">
+    <link rel="stylesheet" href="vendor/revolution/css/navigation.css">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/dist/css/owl.carousel.min.css">
+
+    <!-- Global -->
+    <link rel="stylesheet" href="css/theme.css">
+    <!-- Fonts -->
+    <link rel="stylesheet" href="css/font-face.css">
+	
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loading">
+        <div class="load">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <!-- End Pre Loader -->
+
+    <!-- Header -->
+    <header>
+        <div class="header-wrapper">
+            <!-- Desktop Menu -->
+            <div class="header-wrapper-desktop d-none d-lg-block">
+                <div class="header header-style-3">
+                    <div class="container">
+                        <div class="main-header">
+                            <div class="main-header-container">
+                                <h1 class="header-logo">
+                                    <a href="index.html">
+                                        <img src="images/icon/logo_01.png" alt="logo">
+                                    </a>
+                                </h1>
+                                <nav class="header-navbar">
+                                    <ul class="navbar-menu">
+                                        <li class="active">
+                                            <a href="#">Home</a>
+                                            <ul class="sub-menu">
+                                                <li>
+                                                    <a href="index.html">게시판</a>
+                                                </li>
+                                                <li>
+                                                    <a href="index2.html">웹진</a>
+                                                </li>
+                                                <li>
+                                                    <a href="index3.html">갤러리</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">소개</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">AOD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">VOD</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">게시판</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <div class="header-info">
+                                    <div class="header-info-item">
+                                        <a href="#">로그인</a>
+                                    </div>
+                                    <div class="header-info-item">
+                                        <a href="#">회원가입</a>
+                                    </div>
+                                </div>
+                                <div class="header-button">
+                                    <div class="header-line">|</div>
+                                    <div class="header-search">
+                                        <span data-toggle="modal" data-target="#search-modal">
+                                            <i class="fa fa-search"></i>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Desktop Menu -->
+
+            <!-- Mobile Menu -->
+            <div class="header-wrapper-mobile d-block d-lg-none">
+                <div class="header-mobile__bar">
+                    <div class="header-mobile__logo">
+                        <img src="images/icon/logo_01.png" alt="Bemax">
+                    </div>
+                    <div class="header-mobile__button">
+                        <span class="humburger-box">
+                            <span class="hamburger__inner"></span>
+                        </span>
+                    </div>
+                </div>
+                <nav class="header-mobile__navbar">
+                    <ul class="navbar-menu">
+                        <li>
+                            <a href="#">Home</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="index.html">게시판</a>
+                                </li>
+                                <li>
+                                    <a href="index2.html">웹진</a>
+                                </li>
+                                <li>
+                                    <a href="index3.html">갤러리</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">소개</a>
+                        </li>
+                        <li>
+                            <a href="#">AOD</a>
+                        </li>
+                        <li>
+                            <a href="#">VOD</a>
+                        </li>
+                        <li>
+                            <a href="#">게시판</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- End Mobile Menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- #Content -->
+
+    <!-- Main visual [Start]-->
+    <section><!-- 새로 구성 요소 별 구분 -->
+        <div class="rev_slider_wrapper">
+           
+			<div class="row"><!-- 부트 스트랩 grid 요소 준수 -->
+				<div class="col-md-12"><!-- 부트스트랩 기반 grid columns 12분할 --> 
+					
+					<!-- 메인비주얼 슬라이더 영역 [Start]-->
+					<!-- 위 row, columns 내부 css 구성은 자유롭게 구성하되 body, div, span 등 상위 요소와의 상속이 없이 독립적으로 사용이 가능하도록 구성
+							ex : Markup) <div class="main_visual"><div class="slider"><button class="btnprv"></div></div> 
+							ex : css) .main_visual .slider button {board:1px solid #cccc} 
+								 - 위와 같은 형태로 Bootstrap Grid 기반의 layout 안에서 자유롭게 구성가능하나 상위 요소 상속없이 독립적으로 구성
+								 - 해당 grid 내부에서 width 100%로 구성 
+					-->
+					
+					<div class="rev_slider" id="slide-5" data-version="5.0">
+						<ul>
+							<li data-transition="fade">
+								<img src="images/slide_17.jpg" alt="Work" class="rev-slidebg">
+
+								<div class="tp-caption slide-heading-2 text-capitalize font-weight-normal" data-x="center" data-y="center" data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:-80px;opacity:0;s:300;" data-voffset="['-100','-100','-100','-90','-80']"
+								data-start="900">메인비주얼 영역</div>
+
+								<div class="tp-caption slide-heading-1" data-x="center" data-y="center" data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:80px;opacity:0;s:300;" data-voffset="['-30','-30','-30','-30','-25']" data-start="1300" data-fontsize="['80','80','52','50','46', '42']">About us</div>
+
+								<div class="tp-caption" data-x="center" data-y="center" data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:200px;opacity:0;s:300;" data-voffset="['73', '73', '73', '60','55']" data-start="1600">
+									<a href="#" class="slide-button">Our Company</a>
+								</div>
+							</li>
+							<li data-transition="fade">
+								<img src="images/slide_16.jpg" alt="Work" class="rev-slidebg">
+								<div class="tp-caption slide-heading-2 text-capitalize font-weight-normal" data-x="center" data-y="center" data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:-80px;opacity:0;s:300;" data-voffset="['-100','-100','-100','-90','-80']"
+								data-start="900">메인비주얼 영역</div>
+
+								<div class="tp-caption slide-heading-1" data-x="center" data-y="center" data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:80px;opacity:0;s:300;" data-voffset="['-30','-30','-30','-30','-25']" data-start="1300" data-fontsize="['80','80','52','50','46', '42']">About us 2</div>
+
+								<div class="tp-caption" data-x="center" data-y="center" data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:200px;opacity:0;s:300;" data-voffset="['73', '73', '73', '60','55']" data-start="1600">
+									<a href="#" class="slide-button">Our Company</a>
+								</div>
+							</li>
+							<li data-transition="fade">
+								<img src="images/slide_17.jpg" alt="Work" class="rev-slidebg">
+
+								<div class="tp-caption slide-heading-2 text-capitalize font-weight-normal" data-x="center" data-y="center" data-transform_in="y:-80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:-80px;opacity:0;s:300;" data-voffset="['-100','-100','-100','-90','-80']"
+								data-start="900">메인비주얼 영역</div>
+
+								<div class="tp-caption slide-heading-1" data-x="center" data-y="center" data-transform_in="y:80px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:80px;opacity:0;s:300;" data-voffset="['-30','-30','-30','-30','-25']" data-start="1300" data-fontsize="['80','80','52','50','46','42']">About us 3</div>
+
+								<div class="tp-caption" data-x="center" data-y="center" data-transform_in="y:100px;opacity:0;s:800;e:easeInOutCubic;" data-transform_out="y:200px;opacity:0;s:300;" data-voffset="['73', '73', '73', '60','55']" data-start="1600">
+									<a href="#" class="slide-button">Our Company</a>
+								</div>
+							</li>
+						</ul>
+					</div>
+					
+					<!-- 메인비주얼 슬라이더 영역 [End]-->
+			
+				</div>
+			</div>
+			
+        </div>
+    </section>
+    <!-- Main visual [End]-->
+
+    <!-- banner -->
+    <section>
+        <div class="section-wrapper">
+            <a href="#" class="main-banner">
+                <img src="images/@temp/@main_banner1.jpg" alt="섬김과 나눔으로 세상의 빛과 소금이 되겠습니다. 보내주신 소중한 후원금은 CTS의 사역을 위해 투명하게 사용됩니다. 자세히 보기">
+            </a>
+        </div>
+    </section>
+
+    <!-- 최근 게시물 -->
+    <section>
+        <div class="section-wrapper p-t-80 p-b-80"><!-- 새로 구성 요소 별 구분 p-t-55(padding-top:55) 등 현재 탬플릿 기반 요소 활용 필요시 추가 가능하나 꼭 별도 css 에 비슷한 양식으로 표시 -->
+            <div class="container"><!-- width 100% 가 아닌 width 1200px 중앙정렬 content 영역 -->
+                <div class="row"><!-- 새로 grid layout -->
+                    
+					<!-- 가로 3 colums 일경우 4/12 -->
+					
+					<!-- 가로 1번째 요소 [Start] -->
+					<div class="col-md-4"><!-- grid 내부는 자유롭게 구성하나 상위요소와 상속없이 자체적으로 적용가능하도록 구성 / table box 등은 bootstrip 요소사용 가능 -->
+                        <div class="main-news">
+                            <div class="tit-area">
+                                <h2 class="tit-dep2">공지사항</h2>
+                                <a href="#" class="btn-more"><span class="blind">더보기</span></a>
+                            </div>
+                            <ul class="bbs-list">
+                                <li>
+                                    <a href="#">
+                                        <strong>CTS America 030121~030721 편성표03-01</strong>
+                                    </a>
+                                    <span>2021-03-21</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>CTS America 022221~022821 편성표02-22</strong>
+                                    </a>
+                                    <span>2021-02-21</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>CTS America 021521~022121 편성표</strong>
+                                    </a>
+                                    <span>2021-02-21</span>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <strong>CTS America 021521~022121 편성표</strong>
+                                    </a>
+                                    <span>2021-02-21</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+					<!-- 가로 1번째 요소 [End] -->
+					
+					<!-- 가로 2번째 요소 [Start] -->
+                    <div class="col-md-4">
+                        <div class="main-news">
+                            <div class="tit-area">
+                                <h2 class="tit-dep2">글로벌 신앙에세이</h2>
+                                <a href="#" class="btn-more"><span class="blind">더보기</span></a>
+                            </div>
+                            <div class="main-vod">
+                                <div class="vod-item">
+                                    <iframe width="1904" height="800" src="https://www.youtube.com/embed/-1CxQjBnqP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!-- 가로 2번째 요소 [End] -->
+					
+					<!-- 가로 3번째 요소 [Start] -->
+                    <div class="col-md-4">
+                        <div class="main-news">
+                            <div class="tit-area">
+                                <h2 class="tit-dep2">CTS 뉴욕방송 프로그램</h2>
+                                <a href="#" class="btn-more"><span class="blind">더보기</span></a>
+                            </div>
+                            <div class="main-vod">
+                                <div class="vod-item">
+                                    <iframe width="1904" height="800" src="https://www.youtube.com/embed/-1CxQjBnqP0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<!-- 가로 2번째 요소 [End] -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End 최근 게시물 -->
+
+    <!-- Projects -->
+    <section>
+        <div class="section-wrapper bg-gray p-t-80 p-b-80">
+            <div class="container">
+                <div class="section-title justify-content-start tit-area">
+                    <h2 class="text-left tit-dep2">CTS 뉴욕방송 NEWS</h2>
+                </div>
+                <div class="project-carousel">
+                    <div class="project-carousel-inner">
+                        <div class="owl-carousel js-owl-nav owl-nav-1 last-half" data-items="3" data-loop="true" data-responsive='{"0":{"items":"1", "stagePadding":"0"},"576":{"items":"2", "stagePadding":"0"},"768":{"items":"3"},"992":{"items":"3"}}'>
+                            <div class="project">
+                                <a class="project-container">
+                                    <div class="project-image">
+                                        <img src="images/vod_thumb1.jpg" alt="썸네일 설명">
+                                    </div>
+                                    <div class="project-title">
+                                        <strong>영상 제목 영상 제목 영상 제목 영상 제목</strong>
+                                        <span class="desc">2021-03-04</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a class="project-container">
+                                    <div class="project-image">
+                                        <img src="images/vod_thumb1.jpg" alt="썸네일 설명">
+                                    </div>
+                                    <div class="project-title">
+                                        <strong>영상 제목</strong>
+                                        <span class="desc">2021-03-04</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a class="project-container">
+                                    <div class="project-image">
+                                        <img src="images/vod_thumb1.jpg" alt="썸네일 설명">
+                                    </div>
+                                    <div class="project-title">
+                                        <strong>영상 제목</strong>
+                                        <span class="desc">2021-03-04</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="project">
+                                <a class="project-container">
+                                    <div class="project-image">
+                                        <img src="images/vod_thumb1.jpg" alt="썸네일 설명">
+                                    </div>
+                                    <div class="project-title">
+                                        <strong>영상 제목</strong>
+                                        <span class="desc">2021-03-04</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="btn-area tac">
+                    <a href="#" class="btn-base secondary"><span>View more</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Project -->
+
+    <section>
+        <div class="section-wrapper p-t-80 p-b-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="post-item primary">
+                            <div class="post-thumb">
+                                <img src="images/post_thumb_main.jpg" alt="">
+                                <span class="desc">2020.04.23</span>
+                            </div>
+                            <div class="post-content">
+                                <strong>캠페인</strong>
+                                <span class="text">갑작스럽게 맞이하게 된 코비드19 이후 뉴노멀시대!사회적으로도 교회적으로도 많은 혼란과 어려움이 야기되었지만 힘든 시간 속에서도 '함께 헤쳐나가는' 동역과 연합, </span>
+                                <span class="btn-base third"><span>DETAILS <i class="fa fa-angle-right"></i></span></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="post-item">
+                            <div class="post-thumb">
+                                <img src="images/post_thumb_sub1.jpg" alt="">
+                            </div>
+                            <div class="post-content">
+                                <strong>캠페인</strong>
+                                <span class="text">갑작스럽게 맞이하게 된 코비드19 이후 뉴노멀시대!사회적으로도 교회적으로도 많은 혼란과 어려움이 야기되었지만 힘든 시간 속에서도 '함께 헤쳐나가는' 동역과 연합, </span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="post-item">
+                            <div class="post-thumb">
+                                <img src="images/post_thumb_sub1.jpg" alt="">
+                            </div>
+                            <div class="post-content">
+                                <strong>캠페인</strong>
+                                <span class="text">설명글 설명글 설명글 설명글 </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner -->
+    <section>
+        <div class="section-wrapper bg-gray p-t-70 p-b-70">
+            <div class="container">
+                <div class="section-title justify-content-start tit-area">
+                    <h2 class="text-left tit-dep2">OUR PARTNERS</h2>
+                </div>
+                
+                <div class="partner-list">
+                    <div class="partner-inner">
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                        <div class="partner-item">
+                            <div class="partner">
+                                <img src="images/partner_08.png" alt="Partner 02">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- End Partner -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-wrapper">
+            <div class="footer-style-2">
+                <div class="main-footer py-60">
+                    <div class="footer-grid">
+                        <div class="info">
+                            <div class="links">
+                                <span>㈜지로드코리아</span>
+                                <span>대표자 : 감경철</span>
+                                <span>주소 : 서울시 동작구 노량진로 100 B1F</span>
+                            </div>
+                            <address class="address">
+                                <span class="location">주소 : 서울시 동작구 노량진로 100 B1F</span>
+                                <span class="tel">Tel : 02-6333-2599</span>
+                                <span class="mail">E-mail : zroad@gmail.com </span>
+                                <span class="fax"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="fax" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-fax fa-w-16"><path fill="currentColor" d="M480 160V77.25a32 32 0 0 0-9.38-22.63L425.37 9.37A32 32 0 0 0 402.75 0H160a32 32 0 0 0-32 32v448a32 32 0 0 0 32 32h320a32 32 0 0 0 32-32V192a32 32 0 0 0-32-32zM288 432a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm128 128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-128a16 16 0 0 1-16 16h-32a16 16 0 0 1-16-16v-32a16 16 0 0 1 16-16h32a16 16 0 0 1 16 16zm0-112H192V64h160v48a16 16 0 0 0 16 16h48zM64 128H32a32 32 0 0 0-32 32v320a32 32 0 0 0 32 32h32a32 32 0 0 0 32-32V160a32 32 0 0 0-32-32z" class=""></path></svg>Fax : 02-6333-0073</span>
+                            </address>
+                            <div class="links">
+                                <span>사업자등록번호 : 108-81-81174</span>
+                                <span>통신판매신고번호 : 제2013-서울동작-0620호</span>
+                            </div>
+                        </div>
+                        <span class="copy">Copyright 2021 (C) Zroadkorea. All rights reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Modal Search -->
+    <div class="modal fade" id="search-modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form>
+                    <input type="text" placeholder="Search here...">
+                    <button>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- End Modal Search -->
+
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/mbbootstrap/mdb.min.js"></script>
+    <script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+    <script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="vendor/revolution/js/extensions/revolution.extension.video.min.js"></script>
+    <script src="vendor/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="vendor/lightcase/lightcase.js"></script>
+
+    <script src="js/config-slider.js"></script>
+    <script src="js/config-owl-carousel.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+
+</html>
